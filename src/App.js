@@ -75,6 +75,12 @@ const App = () => {
   const handleDrawerToggle = () => setMobileOpen(!mobileOpen);
 
   return (
+
+
+
+
+
+
     <Router>
       <div style={{ display: "flex" }}>
         <CssBaseline />
@@ -83,7 +89,6 @@ const App = () => {
           handleDrawerToggle={handleDrawerToggle}
         />
         <Switch>
-          <Route path="/homepage.html" />
           <Route exact path="/">
             <Products
               products={products}
