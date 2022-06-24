@@ -1,0 +1,18 @@
+@font-face {
+    font-family: Staff;
+    src: url("./font/StaffMedium.otf") format("opentype");
+}
+
+*{
+    font-family: Staff;
+}
+
+.login {
+    position: relative;
+    background: black;
+    width:100%;
+    z-index: 9999;
+    color:#FF3C32;
+    text-align:end;
+    padding-right:3rem;
+}
