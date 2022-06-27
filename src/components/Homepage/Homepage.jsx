@@ -1,3 +1,16 @@
+import React from 'react'
+
+export default function Homepage() {
+
+
+    return (
+        <div dangerouslySetInnerHTML={{ __html: myHTML }} />
+    )
+
+}
+
+
+const myHTML = `
 <!DOCTYPE html>
 <!-- saved from url=(0031)https://www.clubecriativos.com/ -->
 <html data-site-poweredby="bondlayer.com" data-published="2022-06-22T20:25:48.564Z" lang="pt">
@@ -6215,3 +6228,4 @@
 </body>
 
 </html>
+`;
