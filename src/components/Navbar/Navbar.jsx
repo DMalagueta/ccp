@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { AppBar, Toolbar, IconButton, Badge, MenuItem, Menu, Typography } from '@material-ui/core';
 import { ShoppingCart } from '@material-ui/icons';
 import { Link, useLocation } from 'react-router-dom';
+import '../../index.css';
 
 import logo from '../../assets/logo.svg';
 import useStyles from './styles';
@@ -48,7 +49,7 @@ const PrimarySearchAppBar = ({ totalItems }) => {
             <div className={classes.button}>ACADEMIA</div>
             <div className={classes.button}>JOVENS CRIATIVOS</div>
             <div className={classes.button}>
-              <IconButton component={Link} to="/cart" aria-label="Show cart items" color="inherit">
+              <IconButton className={classes.storecar} component={Link} to="/cart" aria-label="Show cart items" color="inherit">
                 <Badge badgeContent={totalItems} color="secondary">
                   <ShoppingCart />
                 </Badge>

@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { CssBaseline } from "@material-ui/core";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./font/StaffMedium.otf";
 
 import { Navbar, Products, Cart, Checkout, Homepage } from "./components";
 import { commerce } from "./lib/commerce";
+import "./index.css";
 
 const App = () => {
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -86,7 +88,8 @@ const App = () => {
       <Route exact path="/">
         <Homepage />
       </Route>
-
+      
+      <div className="login">ENTRAR</div>
       <div style={{ display: "flex" }}>
         <CssBaseline />
         <Navbar

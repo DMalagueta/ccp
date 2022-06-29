@@ -9,11 +9,15 @@ export default makeStyles((theme) => ({
     paddingTop: "2rem",
     paddingLeft: "3rem",
     paddingRight: "3rem",
-    paddingBottom: "1.3em",
+    paddingBottom: "1.8em",
     [theme.breakpoints.up("sm")]: {
       width: `calc(100% - ${drawerWidth}px)`,
       marginLeft: drawerWidth,
     },
+  },
+  login: {
+    position: "absolute",
+    backgroundColor: "black",
   },
   title: {
     flexGrow: 1,
@@ -25,8 +29,11 @@ export default makeStyles((theme) => ({
     display: "flex",
     alignItems: "flex-end",
     paddingBottom: "0",
-    fontWeight: "500",
+    fontFamily: "Staff",
     fontSize: "18px",
+  },
+  storecar: {
+    paddingBottom: "0",
   },
   toolbar: { padding: "0" },
   image: {
