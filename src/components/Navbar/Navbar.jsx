@@ -39,7 +39,6 @@ const PrimarySearchAppBar = ({ totalItems }) => {
             <img src={logo} alt="commerce.js" height="70px" /> {/* Commerce.js */}
           </Typography>
           <div className={classes.grow} />
-          {location.pathname === '/' && (
             <div className={classes.items}>
               <div className={classes.button}>CCP</div>
               <div className={classes.button}>SOCIO</div>
@@ -59,7 +58,6 @@ const PrimarySearchAppBar = ({ totalItems }) => {
                 </IconButton>
               </div>
             </div>
-          )}
         </Toolbar>
       </AppBar>
       {renderMobileMenu}
