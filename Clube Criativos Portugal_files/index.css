@@ -1,0 +1,339 @@
+html {
+	scroll-behavior: smooth;
+}
+
+
+
+[data-bl-name="Flex Layout abs"] [data-bl-name="Flex items"] .bl-grid-cell:nth-child(+n+10) {
+	display: none;
+}
+
+
+[data-bl-name="Image grey"] {
+	filter: grayscale(100%);
+}
+
+[data-bl-name="Image grey"]:hover {
+	filter: grayscale(0%);
+}
+
+
+[data-bl-name="Section nav"] {
+	position: sticky;
+	top: -25px;
+	z-index: 100;
+}
+
+[data-bl-name="premiados cont"].extra1 {
+	-webkit-animation-name: fadeIn;
+	-webkit-animation-duration: 2s;
+	animation-name: fadeIn;
+	animation-duration: 2s;
+}
+
+[data-bl-name="premiados content"].extra1 {
+	-webkit-animation-name: fadeIn;
+	-webkit-animation-duration: 4s;
+	animation-name: fadeIn;
+	animation-duration: 4s;
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		display: none;
+		opacity: 0;
+	}
+
+	20% {
+		display: block;
+		opacity: 0;
+	}
+
+	100% {
+		display: block;
+		opacity: 1;
+	}
+}
+
+
+
+
+/* form */
+
+.cR0PxEOjuUu {
+	margin-top: 0px;
+	background-color: white;
+	text-color: black;
+}
+
+#mc_embed_signup_scroll {
+	display: block;
+	position: relative;
+	text-align: left;
+	padding: 10px 0 10px 0;
+}
+
+#mc_embed_signup_scroll .mc-field-group {
+	display: flex;
+	flex-direction: column;
+}
+
+[data-bl-name="title sticky"] {
+	position: sticky;
+	top: 70px;
+}
+
+
+/* form end*/
+
+[data-bl-name="Search input"] {
+	padding-left: 1rem;
+	color: #000000;
+}
+
+
+/* text illustra*/
+
+.czdUfLZksyK,
+.cu4HRdFGhZd,
+[data-bl-name="Text 2 col"] {
+	column-count: 2;
+	column-gap: 2rem;
+}
+
+
+/* text illustra end*/
+
+[data-bl-name="table alineas"] ol {
+	counter-reset: my-awesome-counter;
+	list-style: none;
+	padding-left: 30px;
+}
+
+[data-bl-name="table alineas"] ol li {
+	margin: 0 0 0.5rem 0;
+	counter-increment: my-awesome-counter;
+	position: relative;
+	padding-top: 1px;
+	padding-bottom: 10px;
+}
+
+[data-bl-name="table alineas"] ol li::before {
+	content: counter(my-awesome-counter);
+	color: #000;
+	font-size: 13px;
+	font-family: 'Flecha M';
+	position: absolute;
+	--size: 22px;
+	left: calc(-1 * var(--size) - 10px);
+	line-height: var(--size);
+	width: var(--size);
+	height: var(--size);
+	top: 0;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 1);
+	border-width: 1px;
+	border-radius: 50%;
+	text-align: center;
+}
+
+ul,
+ol {
+	font-size: 14px;
+	line-height: 1.4;
+	margin-bottom: 8px;
+	list-style-position: inside;
+	padding-inline-start: 0px;
+}
+
+[data-bl-name="sticky"] {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 140px;
+}
+
+.cOQT3XKHyJ {
+	cursor: url(https://assets.bondlayer.com/nr1dxae7lw/_assets/npcampioxpunp8pnpe8lsr.png), auto;
+}
+
+.cwb0dy05mf {
+	cursor: url(https://assets.bondlayer.com/nr1dxae7lw/_assets/nuc8tpqltbnppvnigvyp4.png) 36 36, auto;
+}
+
+[data-bl-name="logo2"] {
+	mix-blend-mode: difference;
+}
+
+
+/* Safari 4.0 - 8.0 */
+
+@-webkit-keyframes example {
+	0% {
+		left: 0px;
+		top: 0px;
+	}
+
+	30% {
+		left: 100px;
+		top: 200px;
+	}
+
+	80% {
+		right: 100px;
+		top: -100px;
+	}
+
+	100% {
+		left: 0px;
+		top: 0px;
+	}
+}
+
+[data-bl-name="logooverlay"] {
+	mix-blend-mode: difference;
+}
+
+i {
+	font-family: 'Flecha M';
+	font-size: 22px;
+}
+
+
+/* ticker animation */
+
+[data-bl-name="ticker"] {
+	max-width: initial;
+}
+
+[data-bl-name="ticker"] {
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-name: ticker;
+	animation-name: ticker;
+	-webkit-animation-duration: 20s;
+	animation-duration: 20s;
+}
+
+@-webkit-keyframes ticker {
+	0% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		visibility: visible;
+	}
+
+	100% {
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+	}
+}
+
+@keyframes ticker {
+	0% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		visibility: visible;
+	}
+
+	100% {
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+	}
+}
+
+
+/* hover nav */
+
+[data-bl-name="navitem"]:hover [data-bl-name="bottomstroke"] {
+	width: 100%;
+	opacity: 1;
+}
+
+[data-bl-name="text diference"] {
+	mix-blend-mode: difference;
+	color: white;
+}
+
+[data-bl-name="Image overlay"]:hover {
+	mix-blend-mode: multiply;
+	opacity: 0.8;
+	-webkit-filter: grayscale(100%);
+	/* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+}
+
+[data-bl-name="Image overlay2"] {
+	mix-blend-mode: multiply;
+	opacity: 0.8;
+	-webkit-filter: grayscale(100%);
+	/* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+}
+
+[data-bl-name="Image overlay3"] {
+	mix-blend-mode: multiply;
+	opacity: 0.8;
+	-webkit-filter: grayscale(100%);
+	/* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+}
+
+[data-bl-name="Image overlay3"]:hover {
+	opacity: 1;
+	-webkit-filter: none;
+	/* Safari 6.0 - 9.0 */
+	filter: none;
+}
+
+
+[data-bl-name="rotate"] {
+	transform: rotate(-90deg);
+}
+
+
+/*[data-bl-name="overlay content"]{ background: rgb(0,0,0);background: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);}[data-bl-name="overlay gradient"]{ background: rgb(0,0,0);background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 100%);}*/
+
+
+/*[data-bl-name="card2 news"].extra1{   transition: 0.3s ease;  filter: blur(3px);  -webkit-filter: blur(3px);}[data-bl-name="card3 agenda"].extra1{   transition: 0.3s ease;  filter: blur(3px);  -webkit-filter: blur(3px);}*/
+
+[data-bl-name="blinker1"] {
+	/*animation-delay: 2s;*/
+	animation: pulse 8s infinite;
+	margin: 0 auto;
+	display: table;
+	margin-top: 50px;
+	animation-direction: alternate;
+}
+
+[data-bl-name="blinker3"] {
+	animation-delay: 6s;
+	animation: pulse 5s infinite;
+	margin: 0 auto;
+	display: table;
+	margin-top: 50px;
+	animation-direction: alternate;
+}
+
+@keyframes pulse {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0.1;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	/* text illustra*/
+	.czdUfLZksyK,
+	.cT5s53E7P7JZ,
+	.cu4HRdFGhZd,
+	[data-bl-name="Text 2 col"] {
+		column-count: 1;
+		column-gap: 0rem;
+	}
+
+	/* text illustra end*/
+}
