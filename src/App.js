@@ -3,7 +3,7 @@ import { CssBaseline } from "@material-ui/core";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./font/StaffMedium.otf";
 
-import { Navbar, Products, Cart, Checkout } from "./components";
+import { Navbar, Products, Cart, Checkout, Homepage } from "./components";
 import { commerce } from "./lib/commerce";
 import "./index.css";
 
@@ -77,7 +77,18 @@ const App = () => {
   const handleDrawerToggle = () => setMobileOpen(!mobileOpen);
 
   return (
+
+
+
+
+
+
     <Router>
+
+      <Route exact path="/">
+        <Homepage />
+      </Route>
+      
       <div className="login">ENTRAR</div>
       <div style={{ display: "flex" }}>
         <CssBaseline />
@@ -85,9 +96,10 @@ const App = () => {
           totalItems={cart.total_items}
           handleDrawerToggle={handleDrawerToggle}
         />
+
+
         <Switch>
-          <Route path="/homepage.html" />
-          <Route exact path="/">
+          <Route exact path="/store">
             <Products
               products={products}
               onAddToCart={handleAddToCart}
@@ -110,6 +122,7 @@ const App = () => {
               error={errorMessage}
             />
           </Route>
+
         </Switch>
       </div>
     </Router>
