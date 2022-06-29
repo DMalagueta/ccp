@@ -77,18 +77,11 @@ const App = () => {
   const handleDrawerToggle = () => setMobileOpen(!mobileOpen);
 
   return (
-
-
-
-
-
-
     <Router>
-
       <Route exact path="/">
         <Homepage />
       </Route>
-      
+
       <div className="login">ENTRAR</div>
       <div style={{ display: "flex" }}>
         <CssBaseline />
@@ -96,7 +89,6 @@ const App = () => {
           totalItems={cart.total_items}
           handleDrawerToggle={handleDrawerToggle}
         />
-
 
         <Switch>
           <Route exact path="/store">
@@ -122,7 +114,6 @@ const App = () => {
               error={errorMessage}
             />
           </Route>
-
         </Switch>
       </div>
     </Router>
