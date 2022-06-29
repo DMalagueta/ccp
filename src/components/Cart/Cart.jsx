@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Typography, Button, Grid, List, ListItem, IconButton, ListItemAvatar, Avatar, ListItemText } from '@material-ui/core';
 import { Link } from 'react-router-dom';
+import './../../index.css'
 
 
 import CartItem from './CartItem/CartItem';
@@ -12,8 +13,8 @@ const Cart = ({ cart, onUpdateCartQty, onRemoveFromCart, onEmptyCart }) => {
   const handleEmptyCart = () => onEmptyCart();
 
   const renderEmptyCart = () => (
-    <Typography variant="subtitle1">You have no items in your shopping cart,
-      <Link className={classes.link} to="/">start adding some</Link>!
+    <Typography variant="subtitle1">Sem produtos no cesto,
+      <Link className={classes.link} to="/">Adicionar</Link>!
     </Typography>
   );
 
@@ -31,8 +32,8 @@ const Cart = ({ cart, onUpdateCartQty, onRemoveFromCart, onEmptyCart }) => {
       <div className={classes.cardDetails}>
         <Typography variant="h4">Total: {cart.subtotal.formatted}€</Typography>
         <div>
-          <Button className={classes.emptyButton} size="large" type="button" variant="contained" color="secondary" onClick={handleEmptyCart}>Empty cart</Button>
-          <Button className={classes.checkoutButton} component={Link} to="/checkout" size="large" type="button" variant="contained" color="primary">Checkout</Button>
+          <Button className={`${classes.emptyButton} emptybutton`} size="large" type="button" variant="contained" color="secondary" onClick={handleEmptyCart}>Empty cart</Button>
+          <Button className="checkoutbutton" component={Link} to="/checkout" size="large" type="button" variant="contained" color="primary">Checkout</Button>
         </div>
       </div>
     </>

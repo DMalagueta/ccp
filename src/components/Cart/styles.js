@@ -17,6 +17,7 @@ export default makeStyles((theme) => ({
   },
   checkoutButton: {
     minWidth: "150px",
+    backgroundColor: "rgba(34,31,31,1)",
   },
   link: {
     textDecoration: "none",
@@ -29,5 +30,8 @@ export default makeStyles((theme) => ({
   },
   grid: {
     justifyContent: "center",
+  },
+  items: {
+    borderRadius: "0",
   },
 }));

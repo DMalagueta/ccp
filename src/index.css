@@ -2,9 +2,10 @@
     font-family: Staff;
     src: url("./font/StaffMedium.otf") format("opentype");
 }
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
 
 *{
-    font-family: Staff;
+    font-family: Staff !important;
 }
 
 .login {
@@ -15,4 +16,46 @@
     color:#FF3C32;
     text-align:end;
     padding-right:3rem;
+}
+
+.checkoutbutton{
+    min-width: 150px;
+    background-color: rgba(34,31,31,1) !important;
+    border-radius: 5px !important;
+    
+}
+.checkoutbutton:hover{
+    background-color: rgba(34, 31, 31, 0) !important;
+    border: 1px solid rgba(34,31,31,1);
+    color: rgba(34,31,31,1);
+    box-shadow: none !important;
+}
+
+.redbutton{
+    background-color:rgba(255,60,50,1) !important;
+    border-radius: 5px !important;
+}
+
+.redbutton:hover{
+    background-color: rgba(255, 60, 50, 0) !important;
+    border: 1px solid rgba(255,60,50,1);
+    color: rgba(255,60,50,1);
+    box-shadow: none !important;
+}
+
+.emptybutton{
+    background-color:rgba(255,60,50,1) !important;
+    border-radius: 5px !important;
+}
+
+.emptybutton:hover{
+    background-color: rgba(255, 60, 50, 0) !important;
+    border: 1px solid rgba(255,60,50,1);
+    color: rgba(255,60,50,1);
+    box-shadow: none !important;
+    
+}
+
+circle{
+    color: rgba(255,60,50,1);
 }

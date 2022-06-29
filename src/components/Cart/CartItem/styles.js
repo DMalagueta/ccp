@@ -18,6 +18,9 @@ export default makeStyles(() => ({
     display: "flex",
     alignItems: "center",
   },
+  red: {
+    backgroundColor: "black",
+  },
   cartitem: {
     display: "flex",
     justifyContent: "flex-end",

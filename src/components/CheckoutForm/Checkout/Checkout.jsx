@@ -7,7 +7,7 @@ import AddressForm from '../AddressForm';
 import PaymentForm from '../PaymentForm';
 import useStyles from './styles';
 
-const steps = ['Shipping address', 'Payment details'];
+const steps = ['Endereço de Entrega', 'Detalhes de Pagamento'];
 
 const Checkout = ({ cart, onCaptureCheckout, order, error }) => {
   const [checkoutToken, setCheckoutToken] = useState(null);
@@ -44,7 +44,7 @@ const Checkout = ({ cart, onCaptureCheckout, order, error }) => {
   let Confirmation = () => (order.customer ? (
     <>
       <div>
-        <Typography variant="h5">Thank you for your purchase, {order.customer.firstname} {order.customer.lastname}!</Typography>
+        <Typography variant="h5">Obrigado pela sua compra, {order.customer.firstname} {order.customer.lastname}!</Typography>
         <Divider className={classes.divider} />
         <Typography variant="subtitle2">Order ref: {order.customer_reference}</Typography>
       </div>
