@@ -14,7 +14,7 @@ const Cart = ({ cart, onUpdateCartQty, onRemoveFromCart, onEmptyCart }) => {
 
   const renderEmptyCart = () => (
     <Typography variant="subtitle1">Sem produtos no cesto,
-      <Link className={classes.link} to="/">Adicionar</Link>!
+      <Link className={classes.link} to="/store"> Adicionar</Link>!
     </Typography>
   );
 
