@@ -40,22 +40,25 @@ const PrimarySearchAppBar = ({ totalItems }) => {
           </Typography>
           <div className={classes.grow} />
           {location.pathname === '/' && (
-          <div className={classes.items}>
-            <div className={classes.button}>CCP</div>
-            <div className={classes.button}>SOCIO</div>
-            <div className={classes.button}>FESTIVAL</div>
-            <div className={classes.button}>NOTICIAS</div>
-            <div className={classes.button}>AGENDA</div>
-            <div className={classes.button}>ACADEMIA</div>
-            <div className={classes.button}>JOVENS CRIATIVOS</div>
-            <div className={classes.button}>
-              <IconButton className={classes.storecar} component={Link} to="/cart" aria-label="Show cart items" color="inherit">
-                <Badge badgeContent={totalItems} color="secondary">
-                  <ShoppingCart />
-                </Badge>
-              </IconButton>
+            <div className={classes.items}>
+              <div className={classes.button}>CCP</div>
+              <div className={classes.button}>SOCIO</div>
+              <div className={classes.button}>FESTIVAL</div>
+              <a href='/store'>
+                <div className={classes.button}>LOJA</div>
+              </a>
+              <div className={classes.button}>NOTICIAS</div>
+              <div className={classes.button}>AGENDA</div>
+              <div className={classes.button}>ACADEMIA</div>
+              <div className={classes.button}>JOVENS CRIATIVOS</div>
+              <div className={classes.button}>
+                <IconButton className={classes.storecar} component={Link} to="/cart" aria-label="Show cart items" color="inherit">
+                  <Badge badgeContent={totalItems} color="secondary">
+                    <ShoppingCart />
+                  </Badge>
+                </IconButton>
+              </div>
             </div>
-          </div>
           )}
         </Toolbar>
       </AppBar>
